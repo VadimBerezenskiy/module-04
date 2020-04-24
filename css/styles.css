@@ -54,31 +54,36 @@ img {
 
 .list {
   margin: 0;
-  margin-top: 10px;
+  margin-top: 6px;
   padding: 0;
   width: 468px;
   float: right;
   list-style: none;
-  font-family: "Open Sans", sans-serif;
-  font-size: 14px;
-  line-height: 11px;
 }
 
 .list li {
   float: left;
   margin-right: 30px;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-.list li:hover,
-.list li:focus {
-  color: #1abc9c;
-  cursor: pointer;
 }
 
 .list li:last-child {
   margin-right: 0;
+}
+
+.list a:hover,
+.list a:focus {
+  color: #1abc9c;
+  cursor: pointer;
+}
+
+.list a {
+  font-family: "Open Sans", sans-serif;
+  color: #0f0101;
+  line-height: 11px;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
 /* SECTION - PRODUCT-CARD */
@@ -98,7 +103,7 @@ h2::after {
   content: "";
   display: block;
   margin: 0 auto;
-  margin-top: 22px;
+  padding-top: 22px;
   width: 164px;
   border-bottom: 7px solid #1abc9c;
 }
@@ -112,9 +117,7 @@ h2::after {
 .product-list li {
   float: left;
   width: 255px;
-  height: 322px;
   margin-bottom: 30px;
-  border-bottom: 40px solid #323232;
 }
 
 .product-list li:not(:nth-child(4n)) {
@@ -127,13 +130,16 @@ h2::after {
 
 .pic-product {
   display: block;
-  width: 255px;
-  height: 282px;
   background-color: #e9f0fd;
+}
+
+.product-box {
+  background-color: #323232;
 }
 
 .product-name {
   margin: 0;
+
   float: left;
   font-family: "Roboto", sans-serif;
   font-weight: 900;
@@ -146,35 +152,31 @@ h2::after {
 
 .product-name a {
   display: block;
+  padding-left: 10px;
   width: 200px;
-  height: 40px;
+  line-height: 40px;
   color: #ffffff;
   text-decoration: none;
-  padding-left: 10px;
-  padding-top: 10px;
 }
 
 .price {
   float: right;
-  color: #ffffff;
-  text-transform: uppercase;
+  margin: 0;
   width: 55px;
   height: 40px;
-  text-decoration: none;
-  background-color: rgba(255, 255, 255, 44%);
-}
-
-.price p {
-  margin: 0;
-  margin-top: 10px;
-  margin-left: 12px;
+  text-align: center;
+  line-height: 40px;
   font-family: "Roboto", sans-serif;
   font-weight: 900;
   font-size: 18px;
   letter-spacing: -0.36px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 44%);
 }
 
-.price p::before {
+.price::before {
   content: "$";
 }
 
